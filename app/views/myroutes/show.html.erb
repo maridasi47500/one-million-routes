@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @myroute %>
+
+<div>
+  <%= link_to "Edit this myroute", edit_myroute_path(@myroute) %> |
+  <%= link_to "Back to myroutes", myroutes_path %>
+
+  <%= button_to "Destroy this myroute", @myroute, method: :delete %>
+</div>

@@ -1,0 +1,12 @@
+<% content_for :title, "Editing myroute" %>
+
+<h1>Editing myroute</h1>
+
+<%= render "form", myroute: @myroute %>
+
+<br>
+
+<div>
+  <%= link_to "Show this myroute", @myroute %> |
+  <%= link_to "Back to myroutes", myroutes_path %>
+</div>

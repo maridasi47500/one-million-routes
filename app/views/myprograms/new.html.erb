@@ -1,0 +1,11 @@
+<% content_for :title, "New myprogram" %>
+
+<h1>New myprogram</h1>
+
+<%= render "form", myprogram: @myprogram %>
+
+<br>
+
+<div>
+  <%= link_to "Back to myprograms", myprograms_path %>
+</div>

@@ -1,0 +1,37 @@
+<%= form_with(model: framework) do |form| %>
+  <% if framework.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(framework.errors.count, "error") %> prohibited this framework from being saved:</h2>
+
+      <ul>
+        <% framework.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :mycode, style: "display: block" %>
+    <%= form.text_field :mycode %>
+  </div>
+
+  <div>
+    <%= form.label :mylogincode, style: "display: block" %>
+    <%= form.text_field :mylogincode %>
+  </div>
+
+  <div>
+    <%= form.label :myroutecode, style: "display: block" %>
+    <%= form.text_field :myroutecode %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

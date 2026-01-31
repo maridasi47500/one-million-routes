@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Myroutes" %>
+
+<h1>Myroutes</h1>
+
+<div id="myroutes">
+  <% @myroutes.each do |myroute| %>
+    <%= render myroute %>
+    <p>
+      <%= link_to "Show this myroute", myroute %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New myroute", new_myroute_path %>

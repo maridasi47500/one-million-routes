@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  mycode: MyString
+  mylogincode: MyString
+  myroutecode: MyString
+
+two:
+  name: MyString
+  mycode: MyString
+  mylogincode: MyString
+  myroutecode: MyString
