@@ -41,7 +41,8 @@ EOF`\"
 
   <div>
     <%= form.label :myroutecode, style: "display: block" %>
-<p>ecris la ligne de code en bash pour creer une route dans le programme en insérant NOM_DE et _MA_ROUTE à la place du nom de la route si elle est en une/deux partie, et MON_URL à la place de l'url </p>
+<p>ecris la ligne de code en bash pour creer une route dans le programme avec NOM_DE et _MA_ROUTE à la place du nom de la route si elle est en une/deux partie, et MON_URL à la place de l'url pour ecrire le nom de la route en camel case, MY_URL mon url de route</p>
+<p>ecris DOWNCASE_NOM_DE et DOWNCASE_MA_ROUTE à la place du nom de la route si elle est en une/deux partie pour ecrire le nom de la route en minuscule </p>
     <%= form.text_area :myroutecode, style:"width:100%;height:200px;" %>
   </div>
 

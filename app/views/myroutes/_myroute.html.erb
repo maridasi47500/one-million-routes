@@ -1,7 +1,7 @@
 <div id="<%= dom_id myroute %>">
   <p>
     <strong>Myprogram:</strong>
-    <%= myroute.myprogram_id %>
+    <%= link_to myroute.myprogram.title, myroute.myprogram %>
   </p>
 
   <p>
@@ -17,6 +17,7 @@
   <p>
     <strong>Myurl:</strong>
     <%= myroute.myurl %>
+    <%= link_to "aller", "http://localhost:8000"+myroute.myurl, target: "_blank" %>
   </p>
 
 </div>
