@@ -13,7 +13,7 @@
 
   <div>
     <%= form.label :myprogram_id, style: "display: block" %>
-    <%= form.number_field :myprogram_id %>
+    <%= form.select :myprogram_id, Myprogram.all.collect{|h|[h.title+" ("+h.framework.name+")", h.id]} %>
   </div>
 
   <div>
