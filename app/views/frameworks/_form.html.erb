@@ -16,6 +16,18 @@
     <%= form.text_field :name %>
   </div>
 
+<textarea style="height:300px;">Consider a harmuful character as bang, This does not work:
+
+echo `cat <<EOF
+  {"branch":"foo","value":"bar!"}
+EOF`
+
+This does:
+
+echo \"`cat <<EOF
+  {"branch":"foo","value":"bar!"}
+EOF`\"
+</textarea>
   <div>
     <%= form.label :mycode, style: "display: block" %>
 <p>ecris la ligne de code pour creer le programme en insérant MYNAME à la place du nom du programme</p>
